@@ -34,6 +34,7 @@ Sample Output 1
 Explanation 1
 Since n=3 (size of the array) k=5 which is larger than size of the array (n=3)
 So the output is -1
+*/
 
 import java.io.*;
 import java.util.*;
