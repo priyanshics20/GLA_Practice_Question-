@@ -1,0 +1,41 @@
+/*
+Program to find Smallest and Largest elements from One Dimensional Array Elements.
+
+Input Format
+Take an integer n as the size of array.
+Take n elements of array from the user.
+
+Constraints
+n>0 && n<=10000
+
+Output Format
+First line should print the smallest element of the array.
+Second line should print the largest element of the array.
+
+Sample Input 0
+5
+2 65 98 75 21
+
+Sample Output 0
+2
+98
+*/
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+        Arrays.sort(arr);
+        System.out.println(arr[0]);
+        System.out.println(arr[n-1]);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
