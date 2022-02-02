@@ -13,6 +13,26 @@ Atleast one element is required.
 
 Output Format
 Number of designation that contains "HR" along with the elements.
+
+Sample Input 0
+4
+HRExecutive
+Accountant
+HRManager
+SalesMan
+
+Sample Output 0
+2
+HREXECUTIVE
+HRMANAGER
+
+Sample Input 1
+2
+Operator
+Programmer
+
+Sample Output 1
+-1
 */
 
 import java.io.*;
