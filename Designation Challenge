@@ -1,0 +1,47 @@
+/* 
+Alina joined the company last week. She receives the company mails in bulk and it is very hectic to go through each and every mail. 
+She wants to filter out the emails that are related to Human Resources(HR) Department. So help her make the list of the designations that are related to HR.
+
+Write a program that accepts designations in a String array. Check the given array elements containing "HR" and display the total number of elements that contains "HR" and 
+display the elements in the upper case. If no elements contains "HR" then return "-1" as output.
+
+Input Format
+A multiline string input.
+
+Constraints
+Atleast one element is required.
+
+Output Format
+Number of designation that contains "HR" along with the elements.
+*/
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int c=0;
+        String[] arr = new String[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.next();
+            arr[i]=arr[i].toUpperCase();
+            if(arr[i].contains("HR"))
+                c++;
+        }
+        if(c==0)
+            System.out.println(-1);
+        else{
+            System.out.println(c);
+            for(int i=0;i<n;i++){
+                if(arr[i].contains("HR"))
+                    System.out.println(arr[i]);
+            }
+        }
+                               
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
