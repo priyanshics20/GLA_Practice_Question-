@@ -1,0 +1,36 @@
+/*  
+You are given an string.Load the string into stack and perform reverse operation using that stack.
+
+Input Format
+Input the String
+
+Constraints
+1
+
+Output Format
+Print the reverse string
+
+Sample Input 0
+abcd
+
+Sample Output 0
+dcba
+*/
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Stack<Character> stack = new Stack<>();
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        for(int i=0;i<str.length();i++){
+            stack.push(str.charAt(i));   
+        }
+        while(!stack.isEmpty())
+            System.out.print(stack.pop()+"");
+    }
+}
